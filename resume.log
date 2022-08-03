@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.10)  20 JUL 2022 00:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.10)  2 AUG 2022 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,11 +392,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  9824 strings out of 480247
  150046 string characters out of 5896151
- 454174 words of memory out of 5000000
+ 453174 words of memory out of 5000000
  27656 multiletter control sequences out of 15000+600000
  477230 words of font info for 45 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 60i,6n,63p,439b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,6n,63p,412b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/mirshokhid/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecsl100
 0.600pk> </home/mirshokhid/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/t
 crm1000.600pk> </home/mirshokhid/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
@@ -406,9 +406,9 @@ four/jknappen/ec/eccc1440.600pk> </home/mirshokhid/.texlive2021/texmf-var/fonts
 /pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/mirshokhid/.texlive2021/texmf-var
 /fonts/pk/ljfour/jknappen/ec/eccc2488.600pk></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on resume.pdf (1 page, 71839 bytes).
+Output written on resume.pdf (1 page, 70796 bytes).
 PDF statistics:
- 249 PDF objects out of 1000 (max. 8388607)
+ 246 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
  2 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
