@@ -1,0 +1,174 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage{hyperref}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+    \hypersetup{
+        colorlinks=true,
+        linkcolor=blue,
+        filecolor=magenta,      
+        urlcolor=blue,
+        pdftitle={Mirshokhid Okilbekov},
+    }
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Mirshokhid Okilbekov}}\\
+	Tampa, FL $\cdot$ \href{mailto:okilbekovmirshokhid@gmail.com}{okilbekovmirshokhid@gmail.com} $\cdot$ (813) 235-5177 \\ \href{https://linkedin.com/in/mirshokhid-okilbekov}{linkedin.com/in/mirshokhid-okilbekov} $\cdot$ \href{https://okilbekov.me}{okilbekov.me} $\cdot$ \href{https://github.com/okilbekov}{github.com/okilbekov} \\
+\end{center}
+
+%==== Education ====%
+{\Large \header{Education}}
+\textbf{University of South Florida}\hfill Tampa, FL\\
+BS Computer Science \textit{GPA: 3.9} \hfill Aug 2021 - May 2025\\
+\vspace{2mm}
+\textbf{Codepath}\hfill Remote\\
+Certificate in Advanced Software Engineering \hfill May 2022 - Aug 2022\\
+\vspace{1mm}
+
+%==== Experience ====%
+{\Large \header{Experience}}
+
+\textbf{USF Engineering Learning Team} \hfill Tampa, FL\\
+\textit{Peer Mentor} \hfill June 2022 - Present\\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Facilitated ALEKS precalculus tutorial sessions, 3 hours a week
+	\vspace{-2mm}
+	\item Individually mentored up to 15 engineering first-year students
+	\vspace{-2mm}
+	\item Facilitated weekly Learning Team study sessions with interactive group problem solving
+	\vspace{-2mm}
+	\item Met with students one-on-one as needed
+\end{itemize}
+{\Large \header{Projects}}
+{\textbf{Personal Website}}: \href{www.okilbekov.me}{www.okilbekov.me} (for additional information and projects) \\
+{\textbf{Search Server}} (in progress) {\sl C++, CMake} \\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Implemented search server that in constructor receives input stream containing a database of documents, and input stream containing search queries. The result of each query is the most relevant document in the database.
+	\vspace{-2mm}
+	\item Improved time complexity of each search query by using inverted index data structure to store in which documents each word can be found.
+	\vspace{-2mm}
+	\item  Used Test Driven Development approach to decrease bugs in code.
+	\vspace{-2mm}
+	\item Currently rewriting the codebase to concurrently handle search queries and document database update.
+	\vspace{-2mm}
+	\item GitHub: \href{https://github.com/okilbekov/search-server}{github.com/okilbekov/search-server}
+\end{itemize}
+{\textbf{TravL}} {\sl React, Material-UI, HTML, CSS, JS}\\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Developed a responsive single-page web app that shows interesting places around you on the map
+	\vspace{-2mm}
+	\item Used Travel Advisor API, OpenWeatherMap API, and Google Map API to fetch the locations of hotels, restaurants, attractions, and also weather to show them on the map
+	\vspace{-2mm}
+	\item Implemented search feature allowing the user to find travelling information around the world
+	\vspace{-2mm}
+	\item GitHub: \href{https://github.com/okilbekov/TravL}{github.com/okilbekov/TravL}, View Project: \href{https://travl-m.netlify.app}{travl-m.netlify.app}
+\end{itemize}
+{\textbf{URL Shortener}} {\sl React, Express, Node.js, MongoDB, Materialize CSS} \\
+\vspace{-2mm}
+\begin{itemize} \itemsep 1pt
+	\item Created a full-stack web applications using MERN stack that allows users to easily shorten long URLs, and view link's analytics
+	\vspace{-2mm}
+	\item Implemented user administration and authorisation using JSON Web Token
+	\vspace{-2mm}
+	\item Designed RESTful backend server enabling all data to be stored persistently in an online database
+	\vspace{-2mm}
+	\item GitHub: \href{https://github.com/okilbekov/shrink-link}{github.com/okilbekov/shrink-link}, View Project: \href{https://shrink-the-link-app.herokuapp.com}{shrink-the-link-app.herokuapp.com}
+\end{itemize}
+
+{\Large \header{Leadership}}
+\vspace{1mm}
+\textbf{Society of Competitive Programmers at USF} \hfill Tampa, FL\\
+\textit{Technical Chair} \hfill May 2022 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Facilitated weekly workshops on competitive programming, algorithms and data structures
+\end{itemize}
+{\Large \header{Skills}}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	Languages:  & C++, JavaScript, Python, HTML, CSS                                                 \\
+	Frameworks: & React, Redux, Express, Node.js, MongoDB, Material-UI, Bootstrap, Materialize CSS,  \\
+	            & React-Bootstrap, Jest, Google Test \\
+	Tools:      & Git, CMake, Linux, Postman, VS, VS Code, Clion, PyCharm, Vim                                                 \\
+\end{tabular}
+\vspace{2mm}
+
+{\Large \header{Awards}}
+First place in ICPC Southeast Regionals Contest, Div 2 \hfill Miami, FL\\
+Participant of National Math Olympiad in Uzbekistan \hfill Tashkent, Uzbekistan\\
+USF Green \& Gold Directors Scolarship \hfill Tampa, FL\\
+Dean\textquotesingle{}s List Fall 21, Spring 22 \hfill Tampa, FL\\
+\ 
+\end{document}
